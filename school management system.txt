@@ -1,0 +1,14 @@
+import pandas as pd
+data = {
+    "name": ["sumit","kumar","singh","rajput","rahul","aman","dhoni","bhim","oaggy","carl"],
+    "roll": [21,45,65,23,24,54,21,22,28,32],
+    "score": [220,340,564,324,567,312,535,598,439,234],
+    "class teacher": ["mob","luffy","scarlet","daven","shiva","larba","vishnu","prince","amit","rohit"]
+    
+}
+
+create = pd.DataFrame(data)
+a = input("student name")
+qqueary = f"name =='{a}'"
+da = create.query(qqueary)
+print(da)
